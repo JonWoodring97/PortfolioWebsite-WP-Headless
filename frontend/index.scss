@@ -1,0 +1,683 @@
+body, html {
+    background-color: #ffffff;
+    margin: 0px; 
+    padding: 0px;
+    overflow-x: hidden; 
+    height: 100vh; 
+    width: 100vw; 
+  }
+  html{
+    overflow-y: scroll; 
+  }
+  #nav-pane {
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+    border: none;
+  }
+  .header-content{
+    width: 3000px; 
+    height: 50px; 
+    background-color: #202020;
+    margin: auto; 
+  }
+  .navbutton {
+    white-space: normal; 
+    word-wrap: break-word; 
+    background-color: transparent; 
+    border-radius: 0.2em;
+    border-color: #00aaec;
+    border: 2px solid #00aaec;
+    color: #00aaec; 
+    display: none; 
+    height: 50px; 
+    width: 50px; 
+  }
+  .navbutton:hover{
+    color: #353535;
+    border-color: #0d92ff;
+  }
+  .navigation-header{
+    height: 800px; 
+    clip-path: polygon(
+      0 0, 
+      100% 0, 
+      100% 100%, 
+      0 calc(100% - 2vw)
+    );
+      background-color: #202020;
+      display:flex; 
+      justify-content: center; 
+      flex-direction: column;
+      width: 100%; 
+  }
+  .logo-image-link{
+    align-self: center;
+  }
+  .line-break {
+    width: 3000px; 
+    height: 1%; 
+    background-color: #9e9e9e9d;
+    align-self: center; 
+    border-radius: 5px; 
+    margin: 1.5%; 
+  }
+  .site-menu {
+    display: block; 
+    align-self: center; 
+    height: 200px;    
+    margin-top: 0%; 
+  }
+  .site-menu-inner {
+    text-align: center;
+    height: 100%; 
+  }
+  .hamburgerIcon {
+    width: 35px;
+    height: 5px;
+    background-color: #00aaec;
+    margin: 6px 0;
+  }
+  .menudivider{
+    color:  #b0b0b1b3;
+    display: inline-block; 
+    margin-right: 6rem;
+    margin-left: 6rem;   
+  }
+  .menuitem {
+    color: #00aaec; 
+    text-align: center; 
+    margin: auto;
+    text-decoration: none;
+    font-size: 3rem; 
+    display: inline-block; 
+  }
+  .menuitem:hover {
+    transition: color 0.3s;
+  }
+  .navigationmodal {
+    display: block;   
+    position: fixed; 
+    z-index: 1; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 140, 255, 0.9)
+  }
+  .close {
+    float: right; 
+    margin-right: 8.8vw; 
+    font-size: 3em;
+    font-weight: bold;  
+    margin-top: 0.3em; 
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    border: #000;
+  }
+  #modalnavbox {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: left; 
+    margin-left: 2em; 
+    margin-top: 5em; 
+    height: 45%;
+  }
+  .modalnavitem {
+    color: white; 
+    text-decoration: none;
+  }
+  .modalnavitem:hover {
+    transition: color 0.3s; 
+    color: black; 
+  }
+  .homepage-container{
+    width: 100%;
+    height: auto; 
+    display: flex; 
+    flex-direction: column;  
+  }
+  .greeting-box{
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+    margin: auto; 
+    margin-top: 50px;
+    width: 100%; 
+  }
+  .services-button-container {
+    width: 475px; 
+    height: 150px; 
+    position: relative; 
+  }
+  .section-break{
+    margin: auto; 
+    color: rgba(0, 0, 0, 0.822); 
+    width: 2500px; 
+    display: block; 
+    border-bottom: 4px solid #f6f6f6;
+    display: flex; 
+  }
+  .homepage-info-section{
+    width: 1600px;
+    display: flex; 
+    height: 800px; 
+    flex-direction: row;
+    margin: auto; 
+    margin-top: 50px; 
+    justify-content: center; 
+  }
+  .homepage-info-text{
+    font-family: "Rubik","Arial",sans-serif; 
+    font-size: 48px; 
+    align-self:center;
+    width: 800px; 
+  }
+  .portrait-frame{
+    position: relative; 
+    margin-bottom: 9%; 
+    align-self: center; 
+    width: 800px; 
+    height: 600px; 
+    background-color: #2E2E2E;
+  }
+  .portrait-image {
+    width: 90%; 
+    height: 110%; 
+    position: absolute;
+    left: 5%; 
+    top: 10%;
+  }
+  .overlap-image{
+    display: block; 
+    margin: auto; 
+    width: auto; 
+    height: auto; 
+    background-color:#202020;  
+  }
+  .logo-link{
+    margin: auto; 
+    position: relative;   
+  }
+  .homepage-section{
+    background-color: #e2e2e2;
+    clip-path: polygon(
+      0 0, 
+      100% calc(0% + 2vw), 
+      100% 100%, 
+      0 calc(100% - 2vw)
+    );
+    height: auto; 
+    margin: auto; 
+    width: 100%;
+  }
+  .skill-section{
+    position: relative; 
+    margin: auto; 
+    padding-top: 5%; 
+    padding-bottom: 5%; 
+  }
+  .skill-container{
+    display: flex; 
+    justify-content: space-between; 
+    width: 2500px; 
+    margin: auto;
+    height: auto; 
+  }
+  .skill-box{
+    width: 1100px; 
+    background-color: #f6f6f6; 
+    align-self: center; 
+    height: 700px;     
+    margin: auto;
+    margin-top: 5%; 
+    border-top: 5px solid #00aaec; 
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    display: flex; 
+    flex-direction: column; 
+  }
+  .skill-title{
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 50px; 
+    font-family: "Rubik","Arial",sans-serif;
+  }
+  .skill-text-area{
+    width: 80%;  
+    margin-left: auto; 
+    margin-right: auto;  
+    text-align: center; 
+  }
+  .skill-sub-title{
+    color: rgb(65, 65, 65);
+    font-family: "Rubik","Arial",sans-serif; 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 40px; 
+  }
+  .skill-description{
+    font-size: 40px; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  .skill-image{
+    margin-left: auto;
+    margin-right: auto;  
+    margin-top: 3%; 
+    padding-bottom: 5%; 
+  }
+  .services-button{
+    width: 450px; 
+    height: 135px; 
+    font-size: 48px; 
+    font-family: "Rubik","Arial",sans-serif; 
+    font-style: bold;
+    border-radius: 10px; 
+    border: 6px solid #00aaec;
+    background-color: #00aaec;
+    color: white;
+    border-radius: 15px; 
+    margin: auto; 
+    position: absolute; 
+    left: 15px;
+    top: 7px;  
+  }
+  .services-button:hover{ 
+    transition: 0.3s; 
+    transform: scale(1.2);  
+    background-color: white; 
+    color: #00aaec;  
+  }
+  .download-resume{
+    width: 100px; 
+    height: 50px; 
+  }
+  .site-header{
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100%; 
+    background-color: inherit;
+    height: 40px; 
+    background-color: #202020;
+  }
+  .download-link{
+    float: right; 
+    margin: auto; 
+    width: auto; 
+    height: 30px; 
+    text-decoration: none; 
+    color: #00aaec; 
+    font-family: "Rubik","Arial",sans-serif;
+    font-size: 20px; 
+  }
+  .resume-section{
+    display: flex; 
+    margin: auto; 
+    margin-top: 5px;  
+    height: auto; 
+    float: right;  
+    width: 195px;
+    justify-content: center; 
+  }
+  .navlink:hover {
+    position: relative;
+    color: #c5efff;
+    text-decoration: none;
+  }
+  .navlink::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    bottom: 0;
+    left: 0;
+    background-color: #00aaec;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .navlink:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  .aboutpage-container{
+    width: 100%; 
+    height: auto; 
+  }
+  .about-greeting{
+    margin: auto; 
+    flex-direction: column; 
+    font-family: "Rubik","Arial",sans-serif; 
+    width: 1100px; 
+    text-align: center;
+  }
+  .about-content{
+    width: 1500px; 
+    margin: auto; 
+  }
+  .light-title{
+    color: #5E5E5E;
+    font-size: 60px; 
+    font-weight: 300; 
+    font-family: "Rubik","Arial",sans-serif; 
+    align-self: center; 
+  }
+  .light-text{
+    color: #5E5E5E;
+    font-weight: 200; 
+    font-family:"Rubik","Arial",sans-serif;
+    font-size: 18px; 
+  }
+  .large-text{
+    font-size: 50px; 
+  }
+  .small-text{
+    font-size: 42px; 
+  }
+  .page-title{
+    color: black;
+    font-size: 80px; 
+    font-weight: 500; 
+    margin: auto;
+    align-self: center;  
+  }
+  .section-title{
+    font-size: 60px; 
+    font-weight: 600; 
+    font-family: "Rubik","Arial",sans-serif; 
+  }
+  
+  @media only screen and (max-width: 3100px){
+    .line-break{
+      width: 96%; 
+    }
+    .header-content{
+      width: 96%; 
+    }
+    .resume-section{
+      margin-right: 2%;  
+    }
+  }
+  @media only screen and (max-width: 2750px) {
+    .section-break{
+      width: 90%; 
+    }
+    .skill-box{
+      width: 40vw;
+    }
+    .skill-container{
+      width: 91vw;
+    }
+   
+  }
+  @media only screen and (max-width: 1800px) {
+    .about-content {
+      width: 80%; 
+    } 
+    .homepage-info-section {
+      width: 1500px;
+    }
+  }
+  @media only screen and (max-width: 1650px) {
+    .homepage-info-section {
+      width: 90%; 
+    }
+  }
+  @media only screen and (max-width: 1500px) {
+    .page-title {
+      font-size: 64px; 
+    }
+    .light-title {
+      font-size: 48px; 
+    }
+    .section-title{
+      font-size: 48px; 
+    }
+    .large-text {
+      font-size: 40px; 
+    }
+    .small-text {
+      font-size: 34px; 
+    }
+    .menuitem{
+      font-size: 2rem; 
+    }
+    .menudivider{
+      margin-right: 2rem; 
+      margin-left: 2rem; 
+    }
+    .line-break{
+      width: 90%; 
+    }
+    .header-content{
+      width: 90%; 
+    }
+    .resume-section{
+      margin-right: 5%; 
+    }
+    .navigation-header{
+      height: 700px; 
+    }
+    .skill-title{
+      font-size: 35px; 
+    }
+    .skill-sub-title{
+      font-size: 30px; 
+    }
+    .skill-description{
+      font-size: 30px; 
+    }
+    .skill-box{
+      height: 550px;
+    }
+    .portrait-frame {
+      height: 500px; 
+    }
+  }
+  @media only screen and (max-width: 1320px) {
+    .page-title {
+      font-size: 51px; 
+    }
+    .light-title {
+      font-size: 38px; 
+    }
+    .section-title{
+      font-size: 38px; 
+    }
+    .large-text {
+      font-size: 32px; 
+    }
+    .small-text {
+      font-size: 27px; 
+    }
+    .portrait-frame {
+      height: 420px; 
+      margin-bottom: 9%; 
+    }
+    .homepage-info-section {
+      margin-top: 90px; 
+      height: 510px; 
+      width: 1188px; 
+      margin-bottom: 90px; 
+      position: relative; 
+    }
+    .about-greeting {
+      max-width: 80%; 
+    }
+    
+  }
+  @media only screen and (max-width: 1213px) {
+    .homepage-info-section {
+      flex-direction: column; 
+      justify-content: center;
+      height: 875px; 
+      width: 90%; 
+      margin-top: 20px; 
+    }
+    .services-button {
+      left: 0px; 
+    }
+    .greeting-box {
+      width: 800px; 
+      display: block; 
+      position: relative; 
+      height: 30px; 
+      margin-bottom: 5px;     
+    }
+    .homepage-title {
+      position: absolute; 
+    }
+  
+  }
+  @media only screen and (max-width: 920px) {
+    .navbutton {
+      display: block;   
+      align-self: center;
+      margin-right: 10vw;
+    }
+    .logo-image{
+      height: 200px; 
+      width: 200px; 
+    }
+    .line-break{
+      display: none; 
+    }
+    .site-menu{
+      display: none;  
+    }
+    .navigation-header{
+      flex-direction: row; 
+      justify-content: space-between;
+      height: 20%; 
+      width: 100%; 
+    }
+    .skill-container{
+      flex-direction: column;
+    }
+    .skill-section{
+      height: 65%; 
+    }
+    .skill-box{
+      width: 600px; 
+    }
+    .page-title {
+      font-size: 41px; 
+    }
+    .light-title {
+      font-size: 30px; 
+    }
+    .section-title{
+      font-size: 30px; 
+    }
+    .large-text {
+      font-size: 25px; 
+    }
+    .small-text {
+      font-size: 22px; 
+    }
+    .homepage-info-text {
+      width: 87%; 
+    }
+    .greeting-box {
+      width: 78%; 
+    }
+    .portrait-frame {
+      width: 87%; 
+    }
+  } 
+  @media only screen and (max-width: 700px) {
+    .homepage-info-text {
+      font-size: 1.5rem; 
+    }
+    .homepage-info-section {
+      height: 700px; 
+      margin-top:0px; 
+    }
+    .skill-box{
+      width: 80vw;
+      height: 600px;
+    }
+    .skill-title{
+      font-size: 40px; 
+    }
+    .skill-sub-title{
+      font-size: 30px;
+    }
+    .skill-description{
+      font-size: 30px;
+    }
+    .services-button{
+      width: 200px; 
+      height: 60px; 
+      font-size: 20px; 
+    }
+    .services-button-container {
+      width: 200px; 
+      height: 70px; 
+    }
+    .page-title {
+      font-size: 33px; 
+    }
+    .light-title {
+      font-size: 24px; 
+    }
+    .section-title{
+      font-size: 24px; 
+    }
+    .large-text {
+      font-size: 20px; 
+    }
+    .small-text {
+      font-size: 18px; 
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .logo-image{
+      height: 200px; 
+      width: 200px; 
+    }
+    .navigation-header{
+      height: 20%; 
+    }
+    .skill-title{
+      font-size: 1.5rem; 
+    }
+    .skill-sub-title{
+      font-size: 1.25rem; 
+    }
+    .skill-description{
+      font-size: 1.5rem; 
+    }
+    .skill-box{
+      height: 450px; 
+    }
+    .page-title {
+      font-size: 26px; 
+    }
+    .light-title {
+      font-size: 19.2px; 
+    }
+    .section-title{
+      font-size: 19.2px; 
+    }
+    .large-text {
+      font-size: 16px; 
+    }
+    .small-text {
+      font-size: 14.4px; 
+    }
+    .homepage-info-section {
+      height: 490px; 
+    }
+    .portrait-frame {
+      height: 250px; 
+    }
+  }
+  
