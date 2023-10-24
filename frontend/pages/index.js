@@ -4,11 +4,7 @@ import Router from 'next/router';
 import WPAPI from 'wpapi';
 import PageWrapper from '../components/PageWrapper';
 import Config from '../config';
-import HomePage from './HomePage';
-import store from '../store';
-import {Provider} from 'react-redux';
-import '../index.scss';
-import NavigationPane from '../components/NavigationPane';
+import App from '../pages/[slug]';
 
 const wp = new WPAPI({ endpoint: Config.apiUrl });
 
@@ -74,9 +70,7 @@ function Index() {
   ));
 
   return (
-    <Provider store={store}>
-      <NavigationPane/>
-    </Provider>
+    <App/>
   );
 }
 

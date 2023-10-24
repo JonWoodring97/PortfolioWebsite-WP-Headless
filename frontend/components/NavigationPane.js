@@ -2,9 +2,11 @@ import React, {useState, useEffect} from 'react';
 import NavigationModal from './NavigationModal';
 import {connect} from 'react-redux';
 import {updateModal} from '../reducers/websiteReducer'
-import download from '../assets/images/download-icon.svg'
+import { useRouter } from 'next/router';
 
 let NavigationPane = (props) => {
+  const router = useRouter();
+
   return (
     <div id="nav-pane">
       <NavigationModal/> 
@@ -27,23 +29,26 @@ let NavigationPane = (props) => {
         <nav className = 'site-menu'> 
           <ul className = 'site-menu-inner'>
             <li className='menuitem'>
-              <a href = '/home' className = "menuitem navlink"> Home </a> 
+              <a onClick= {() => router.push('home')} href = '/home' className = "menuitem navlink"> Home </a> 
               <div className = 'menudivider'> / </div>
             </li>
             <li className = 'menuitem'>
-              <a href =  '/about' className = "menuitem navlink"> About </a>
+              <a onClick= {(e) => router.push('about')} href =  '/about' className = "menuitem navlink"> About </a>
               <div className = 'menudivider'> / </div>
             </li>
             <li className = 'menuitem'>
-              <a href = '/services' className = "menuitem navlink"> Services </a>
+              <a onClick= {(e) => router.push('services')} href = '/services' className = "menuitem navlink"> Services </a>
               <div className = 'menudivider'> / </div>
             </li>
             <li className = 'menuitem'>
-              <a href = '/work' className = "menuitem navlink"> Work </a>
+              <a onClick= {(e) => router.push('work')} href = '/work' className = "menuitem navlink"> Work </a>
               <div className = 'menudivider'> / </div>
             </li>
             <li className = 'menuitem'>
-              <a href = '/blog' className = "menuitem navlink"> Blog </a> 
+              <a onClick= {(e) => { 
+                router.push('blog'); 
+                }
+              } href = '/blog' className = "menuitem navlink"> Blog </a> 
             </li>
           </ul>
         </nav>

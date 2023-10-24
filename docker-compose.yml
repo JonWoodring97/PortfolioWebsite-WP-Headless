@@ -33,7 +33,7 @@ services:
         container_name: frontend
         expose:
             - '3000'
-        image: node:17
+        image: node:18
         ports:
             - '3000:3000'
         user: node
