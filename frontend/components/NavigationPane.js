@@ -33,14 +33,6 @@ let NavigationPane = (props) => {
               <div className = 'menudivider'> / </div>
             </li>
             <li className = 'menuitem'>
-              <a onClick= {(e) => router.push('about')} href =  '/about' className = "menuitem navlink"> About </a>
-              <div className = 'menudivider'> / </div>
-            </li>
-            <li className = 'menuitem'>
-              <a onClick= {(e) => router.push('services')} href = '/services' className = "menuitem navlink"> Services </a>
-              <div className = 'menudivider'> / </div>
-            </li>
-            <li className = 'menuitem'>
               <a onClick= {(e) => router.push('work')} href = '/work' className = "menuitem navlink"> Work </a>
               <div className = 'menudivider'> / </div>
             </li>

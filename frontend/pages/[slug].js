@@ -1,5 +1,4 @@
 import HomePage from '../components/home'
-import About from '../components/about'
 import Blog from '../components/blog'
 import store from '../store';
 import { Provider } from 'react-redux';
@@ -17,7 +16,6 @@ function ClientSideRoute() {
       <div>
         {slug === undefined && <HomePage />}
         {slug === 'home' && <HomePage />}
-        {slug === 'about' && <About />}
         {slug === 'blog' && <Blog />}
       </div>
     </Provider>

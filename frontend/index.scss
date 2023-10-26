@@ -156,10 +156,8 @@ body, html {
   }
   .section-break{
     margin: auto; 
-    color: rgba(0, 0, 0, 0.822); 
     width: 2500px; 
     display: block; 
-    border-bottom: 4px solid #f6f6f6;
     display: flex; 
   }
   .homepage-info-section{
@@ -172,7 +170,7 @@ body, html {
     justify-content: center; 
   }
   .homepage-info-text{
-    font-family: "Rubik","Arial",sans-serif; 
+    font-family: "montserrat"; 
     font-size: 48px; 
     align-self:center;
     width: 800px; 
@@ -215,7 +213,10 @@ body, html {
     margin: auto; 
     width: 100%;
   }
-  .skill-section{
+  .white{
+    background-color: #ffffff;
+  }
+  .inner-homepage-section{
     position: relative; 
     margin: auto; 
     padding-top: 5%; 
@@ -347,34 +348,6 @@ body, html {
     visibility: visible;
     transform: scaleX(1);
   }
-  .aboutpage-container{
-    width: 100%; 
-    height: auto; 
-  }
-  .about-greeting{
-    margin: auto; 
-    flex-direction: column; 
-    font-family: "Rubik","Arial",sans-serif; 
-    width: 1100px; 
-    text-align: center;
-  }
-  .about-content{
-    width: 1500px; 
-    margin: auto; 
-  }
-  .light-title{
-    color: #5E5E5E;
-    font-size: 60px; 
-    font-weight: 300; 
-    font-family: "Rubik","Arial",sans-serif; 
-    align-self: center; 
-  }
-  .light-text{
-    color: #5E5E5E;
-    font-weight: 200; 
-    font-family:"Rubik","Arial",sans-serif;
-    font-size: 18px; 
-  }
   .large-text{
     font-size: 50px; 
   }
@@ -386,12 +359,13 @@ body, html {
     font-size: 80px; 
     font-weight: 500; 
     margin: auto;
-    align-self: center;  
+    align-self: center;
+    font-family: "Montserrat";
   }
   .section-title{
     font-size: 60px; 
     font-weight: 600; 
-    font-family: "Rubik","Arial",sans-serif; 
+    font-family: "Montserrat"; 
   }
   
   @media only screen and (max-width: 3100px){
